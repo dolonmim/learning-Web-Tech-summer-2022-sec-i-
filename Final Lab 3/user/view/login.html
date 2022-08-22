@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<title>Login Form</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<center>
+		<div class="bg">
+			<div class="navigation">
+
+			 <div class="back">
+				<ul>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="home.php">BACK</a></li>
+				</ul>
+			 </div>
+			</div>
+            
+
+       
+	<div class="form">
+		<h2>Login Here</h2>
+		<form action="../controller/loginCheck.php" method="POST" class="login-email">
+			
+			<table >
+				<input type="email" placeholder="Enter Email Here" name="email" value="" required>
+				
+				</div>
+				<br>
+				<br>
+				
+	        <center>
+				<div>
+			
+				<input type="password" placeholder="Enter Password Here" name="password" value="" id="Show" required >
+			</div>
+		    </center>
+		    <div class="font">
+				<label>Show Password</label> </div>
+				<input type="checkbox" placeholder="" name="" onclick="myFunction()" value="" >
+                <p> <a href="../view/resetpass.php">Forgot password?</a></p>
+
+
+				<script >
+					function myFunction()
+					{
+						var show=document.getElementById('Show')
+						if(show.type=='password')
+						{
+							show.type='text';
+
+						}
+						else
+						{
+							show.type='password';
+
+						}
+					}
+				
+
+				</script>
+
+				
+			</div>
+			<div class="login">
+				
+				
+				<input type="submit" name="submit" value="Login" class="btn"></button>
+			</div>
+			<div class="font">
+
+			Don't have an account?  <a href="../view/signup.php">Register Here</a></div>
+		
+			
+		</div>
+			
+		</table>
+	
+		</form>
+	</div>
+</div>
+</center>
+</body>
+</html>
